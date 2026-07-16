@@ -5,6 +5,190 @@
 <meta charset= "utf -8" />
 <meta name="viewport" content="width=device-width,initial scale= 1.0"
 <title> Name the Browser Tab</title>
+<link rel="stylesheet" href="./style.css">
+{
+ box sizing: border box;   
+ padding: 0;
+ margin: 0;
+}
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #cafdff;
+}
+
+header {
+    background-color: #eadcff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.subheader {
+    font-size: 36px;
+    margin: 16px 0 24px 0;
+}
+
+button {
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+
+a {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 300px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about, 
+#discord,
+#contact 
+footer {}
+    padding: 48px 0;
+}    
+
+/*
+
+ABOUT
+
+/*
+#about {
+    background-color: #f8ffdc;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img--wrapper {
+    width: 40%;
+    padding: 0 24px;
+}
+
+img {
+    width: 100%;
+}
+
+.section__description--wrapper {
+    width: 60;
+    padding: 0 24px;
+}
+
+.section__description--para {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom 24px;
+}
+
+/*
+
+DISCORD
+
+*/
+
+#discord {
+    background-color: #cefeff;
+}
+
+/*
+
+CONTACT
+
+*/
+
+#contact {
+    background-color #dec9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    max width: 480px;
+    margin-bottom: 16px;
+}
+
+.footer__links {
+    margin-bottom: 32px;
+}
+
+.footer__link {
+    padding: 0 16px;
+
+
+
+
+
+
 <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -19,6 +203,7 @@
          </ul>
         </nav>
         <header>
+            <div class="row"
             <div>
               <h1> My Website</h1>
               <h1> Best Place to learn Frontend</h1>
@@ -33,13 +218,20 @@
     <main>
         <section> id="about"</section>
         <h2>About</h2>
-        <div>
-            <p>
+        <div class="row">
+        </div>
+        <div class="section__description">
+            <div class="section__description--wrapper">
+                <p class="section__description--para">
+        
+            <p class="section__description--para">
                 Lorem ipsom doler sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorus inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
             </p>
-            <p> Lorem ipsom dolor sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorus inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
+            <p class="section__description--para">
+                 Lorem ipsom dolor sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorus inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
             </p>
         </div>
+        <figure class="about__img--wrapper">
         <figure>
             <img src="./assets/about.jpg" alt="">
         </figure>
@@ -47,13 +239,17 @@
 
     <section id="discord">
         <h2>Discord</h2>
-        <figure>
-            <img src="./assets/discord.jpg" alt="Discord">
+        <div class="row">
+          <div class="section__description">
+            <figure class="#about__img--wrapper">
+              <img src="./assets/discord.jpg" alt="Discord">
         </figure>
-        <div>
-            <p> Lorem ipsom dolor sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorusm inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
+        <div class="section__description--wrapper">
+            <p class="section__description--para">
+                Lorem ipsom dolor sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorusm inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
             </p>
-            <p> Lorem ipsom dolor sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorusm inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
+            <p class="section__description--para">
+                Lorem ipsom dolor sit amet consectetur adipisicing elit. Consequetur tempore venium nostrum temporibus doloribus dolorusm inventore. Eveniet laborisum magni blanditius explicabo. Quidem ipsum notsrum sed iste saepe fugiat natus hic.
             </p>
         </div>
     </section>
@@ -62,20 +258,21 @@
         <h2>Contact</h2>
         <form action="">
             <span>email</span>
-            <input type="text" placeholder="jane@example.com"
+            <input type="email" placeholder="jane@example.com"
             <span>Message</span>
-            <textarea type="text" placeholder="jane@example.com"</textarea>
+            <textarea type="text" placeholder= Cool Website, lets get Connected"</textarea>
+            <button>Contact Us!</button>
         </form>
     </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="about">About</a>
-            <a href="discord">Discord</a>
-            <a href="contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="">
+        <div class="footer__links"
+           <a class="footer__links" href="about">About</a>
+           <a class="footer__links" href="discord">Discord</a>
+           <a class="footer__links" href="contact">Contact</a>
+           <a class="footer__links" href="">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
